@@ -6,5 +6,6 @@ file(GLOB API "api/*.cpp")
 
 add_executable(budget ${SOURCES} ${PAGES} ${API})
 target_link_libraries(budget OpenSSL::SSL)
+target_link_libraries(budget -luuid)
 install(TARGETS budget DESTINATION bin/)
 

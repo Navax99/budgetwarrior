@@ -40,7 +40,7 @@ install: release_debug
 	@ echo ""
 	install budget.man $(mandir)/man3/budget.3
 	install release_debug/bin/budget $(bindir)/budget
-	install completions/bash $(prefix)/etc/bash_completion.d/budget
+	#install completions/bash $(prefix)/etc/bash_completion.d/budget
 	install completions/zsh $(prefix)/share/zsh/site-functions/_budget
 
 install_light: release_debug

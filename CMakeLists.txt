@@ -13,5 +13,8 @@ find_package(OpenSSL REQUIRED)
 include_directories(include)
 include_directories(cpp-httplib)
 include_directories(${OPENSSL_INCLUDE_DIR})
+include_directories(/usr/local/include)
+
+link_directories(/usr/local/lib)
 
 add_subdirectory(src)
